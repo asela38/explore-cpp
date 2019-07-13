@@ -1,0 +1,6 @@
+# remove accidently commited none cpp code
+find . -not -name *.cpp -type f -exec git rm --cached {} \;
+
+
+# compile cpp code 
+clang++ -std=c++11 -o OperatorsWithInt -Wall -Wextra OperatorsWithInt.cpp 
